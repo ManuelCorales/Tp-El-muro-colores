@@ -33,8 +33,8 @@
     function hacerQuery($query){
         try{
         $servername = "localhost";
-        $username = "root";
-        $password = "manu0712";
+        $username = "root"; //Your user in MYSQL
+        $password = "******"; //Your password for that 
         $conn = new PDO("mysql:host=$servername;dbname=coloresdb", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $q = $conn->query($query);
